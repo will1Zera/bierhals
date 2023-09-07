@@ -29,16 +29,10 @@
     margin-bottom: var(--mb-0-25);
 }
 
-.home__hand{
-    width: 38px;
-    height: 38px;
-    margin-left: 0.4rem;
-}
-
 .home__subtitle{
     position: relative;
     font-size: var(--h3-font-size);
-    padding-left: 4.5rem;
+    padding-left: 2.6rem;
     font-weight: var(--font-normal);
     margin-bottom: var(--mb-1);
 }
@@ -46,7 +40,7 @@
 .home__subtitle::before{
     content: '';
     position: absolute;
-    width: 50px;
+    width: 26px;
     height: 1px;
     background-color: var(--text-color);
     left: 0;
