@@ -71,22 +71,29 @@ img{
 
 /* ------ Grande ------ */
 
-@media screen and (max-width: 992px){
-    .services__container{
-        grid-template-columns: max-content;
-        row-gap: 2rem;
-    }
-}
+
   
 /* ------ Média ------ */
   
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px){
     .services__container{
         grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .services__content{
         padding: 1.5rem;
+        width: 23rem;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+    .services__content{
+        width: 18rem;
     }
 }
   
@@ -99,5 +106,9 @@ img{
 
     .services__name{
         font-size: var(--small-font-size);
+    }
+
+    .services__content{
+        width: 90%;
     }
 }
