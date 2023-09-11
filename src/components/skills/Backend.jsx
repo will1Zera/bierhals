@@ -24,6 +24,14 @@ const Backend = () => {
           </div>
 
           <div className="skills__data">
+            <i class='bx bxl-mongodb'></i>
+
+            <div>
+              <h3 className="skills__name">MongoDB</h3>
+            </div>
+          </div>
+
+          <div className="skills__data">
             <i class='bx bx-check'></i>
 
             <div>
@@ -54,6 +62,14 @@ const Backend = () => {
 
             <div>
               <h3 className="skills__name">Cypress</h3>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <i class='bx bx-check'></i>
+
+            <div>
+              <h3 className="skills__name">Cucumber</h3>
             </div>
           </div>
         </div>

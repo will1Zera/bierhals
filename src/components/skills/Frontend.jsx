@@ -30,6 +30,14 @@ const Frontend = () => {
               <h3 className="skills__name">Bootstrap</h3>
             </div>
           </div>
+
+          <div className="skills__data">
+            <i class='bx bxl-jquery'></i>
+
+            <div>
+              <h3 className="skills__name">JQuery</h3>
+            </div>
+          </div>
         </div>
 
         <div className="skills__group">
@@ -54,6 +62,14 @@ const Frontend = () => {
 
             <div>
               <h3 className="skills__name">React</h3>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <i class='bx bx-check'></i>
+
+            <div>
+              <h3 className="skills__name">Jest</h3>
             </div>
           </div>
         </div>

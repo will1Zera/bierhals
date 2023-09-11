@@ -73,6 +73,26 @@ const Qualification = () => {
 
                     <div className="qualification__data">
                         <div>
+                            <h3 className="qualification__title">Testes automatizados com Cypress</h3>
+                            <span className="qualification__subtitle">Udemy</span>
+                            <div className="qualification__calender">
+                                <i className="uil uil-calendar-alt"> 09/2023</i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div className="qualification__data">
+                        <div></div>
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                        <div>
                             <h3 className="qualification__title">Certificado em ReactJs</h3>
                             <span className="qualification__subtitle">ProgramadorBr</span>
                             <div className="qualification__calender">
@@ -80,6 +100,16 @@ const Qualification = () => {
                             </div>
                         </div>
 
+                    </div>
+
+                    <div className="qualification__data">
+                        <div>
+                            <h3 className="qualification__title">Certificado em Firebase, JQuery e Bootstrap</h3>
+                            <span className="qualification__subtitle">ProgramadorBr</span>
+                            <div className="qualification__calender">
+                                <i className="uil uil-calendar-alt"> 05/2022</i>
+                            </div>
+                        </div>
                         <div>
                             <span className="qualification__rounder"></span>
                             <span className="qualification__line"></span>
@@ -94,10 +124,10 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                         <div>
-                            <h3 className="qualification__title">Certificado em Firebase, JQuery e Bootstrap</h3>
+                            <h3 className="qualification__title">Certificado em HTML, CSS e Javascript</h3>
                             <span className="qualification__subtitle">ProgramadorBr</span>
                             <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"> 05/2022</i>
+                                <i className="uil uil-calendar-alt"> 04/2022</i>
                             </div>
                         </div>
                     </div>
