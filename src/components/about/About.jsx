@@ -3,14 +3,34 @@ import "./about.css";
 import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/curriculo-william-bierhals.pdf";
 import Info from './Info';
+import { motion } from "framer-motion"
+
+let easeing = [0.6, -0.5, 0.01, 0.99];
+
+const item = {
+  hidden:{opacity:0, y:-30},
+  show:{
+      opacity: 1,
+      y: 0,
+      transition:{duration: 0.8, ease: easeing}
+  }
+};
+
+const container = {
+  show:{
+      transition:{
+          staggerChildren: 0.2
+      }
+  }
+};
 
 const About = () => {
   return (
-    <section className="about section" id="about">
-        <h2 className="section__title">Sobre mim</h2>
-        <span className="section__subtitle">Minha introdução</span>
+    <motion.section className="about section" id="about" variants={container} initial='hidden' exit='exit' whileInView='show' viewport={{once: false}}>
+        <motion.h2 className="section__title" variants={item}>Sobre mim</motion.h2>
+        <motion.span className="section__subtitle" variants={item}>Minha introdução</motion.span>
 
-        <div className="about__container container grid">
+        <motion.div className="about__container container grid" variants={item}>
             <img src={AboutImg} alt="" className="about__img" />
 
             <div className="about__data">
@@ -49,8 +69,8 @@ const About = () => {
                     </svg>
                 </a>
             </div>
-        </div>
-    </section>
+        </motion.div>
+    </motion.section>
   );
 }
 

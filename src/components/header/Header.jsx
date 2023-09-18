@@ -1,5 +1,21 @@
 import React, { useState } from 'react';
 import "./header.css";
+import { motion } from "framer-motion"
+
+let easeing = [0.6, -0.5, 0.01, 0.99];
+
+const header = {
+    initial:{
+        y: -60,
+        opacity: 0,
+        transition:{duration: 0.05, ease: easeing}
+    },
+    animate:{
+        y: 0,
+        opacity: 1,
+        transition:{duration: 0.5, ease: easeing}
+    }
+};
 
 const Header = () => {
 
@@ -13,12 +29,12 @@ const Header = () => {
     const[activeNav, setActiveNav] = useState("#home");
 
   return (
-    <header className="header">
+    <motion.header className="header" initial="initial" animate='animate'>
         <nav className="nav container">
-            <a href="index.html" className="nav__logo">Bierhals</a>
+            <motion.a href="index.html" className="nav__logo" variants={header}>Bierhals</motion.a>
 
             <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
-                <ul className="nav__list grid">
+                <motion.ul className="nav__list grid" variants={header}>
                     <li className="nav__item">
                         <a href="#home" onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? "nav__link active-link" : "nav__link"}>
                             <i className="uil uil-estate nav__icon"></i> Início
@@ -54,16 +70,16 @@ const Header = () => {
                             <i className="uil uil-message nav__icon"></i> Contato
                         </a>
                     </li>
-                </ul>
+                </motion.ul>
 
                 <i class="uil uil-times nav__close" onClick={() => showMenu(!Toggle)}></i>
             </div>
 
-            <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
+            <motion.div className="nav__toggle" onClick={() => showMenu(!Toggle)} initial="initial" animate='animate' variants={header}>
                 <i class="uil uil-apps"></i>
-            </div>
+            </motion.div>
         </nav>
-    </header>
+    </motion.header>
   );
 }
 

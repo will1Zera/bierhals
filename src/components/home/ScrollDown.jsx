@@ -1,8 +1,11 @@
 import React from 'react'
+import { motion } from "framer-motion"
+
+let easeing = [0.6, -0.5, 0.01, 0.99];
 
 const ScrollDown = () => {
     return (
-        <div className="home__scroll">
+        <motion.div className="home__scroll" initial={{opacity: 0, scale: 0}} animate={{opacity: 1, scale: 1}} transition={{duration: 1.2, ease: easeing}}>
             <a href="#about" className="home__scroll-butoon button--flex">
                 <svg
                         width="32px"
@@ -42,7 +45,7 @@ const ScrollDown = () => {
                 <span className="home__scroll-name">Role para baixo</span>
                 <i class="uil uil-arrow-down home__scroll-arrow"></i>
             </a>
-        </div>
+        </motion.div>
     );
 }
 

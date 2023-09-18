@@ -1,10 +1,30 @@
 import React from 'react'
 import './footer.css'
+import { motion } from "framer-motion"
+
+let easeing = [0.6, -0.5, 0.01, 0.99];
+
+const item = {
+  hidden:{opacity:0, y:-30},
+  show:{
+      opacity: 1,
+      y: 0,
+      transition:{duration: 0.8, ease: easeing}
+  }
+};
+
+const container = {
+  show:{
+      transition:{
+          staggerChildren: 0.2
+      }
+  }
+};
 
 const Footer = () => {
   return (
-    <footer className="footer">
-        <div className="footer__container container">
+    <motion.footer className="footer" variants={container} initial='hidden' exit='exit' whileInView='show' viewport={{once: false}}>
+        <motion.div className="footer__container container" variants={item}>
             <h1 className="footer__title">Bierhals</h1>
 
             <ul className="footer__list">
@@ -24,8 +44,8 @@ const Footer = () => {
             </div>
 
             <span className="footer__copy">&#169; William Bierhals. Todos os direitos reservados.</span>
-        </div>
-    </footer>
+        </motion.div>
+    </motion.footer>
   );
 }
 

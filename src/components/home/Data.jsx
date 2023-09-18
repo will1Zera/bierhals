@@ -1,10 +1,34 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
+import { motion } from "framer-motion"
+
+let easeing = [0.6, -0.5, 0.01, 0.99];
+
+const fadeInUp = {
+  initial:{
+      y: -60,
+      opacity: 0,
+      transition:{
+          duration: 0.6,
+          ease: easeing
+      }
+  },
+  animate:{
+      y: 0,
+      opacity: 1,
+      transition:{
+          duration: 0.6,
+          delay: 0.5,
+          ease: easeing
+      }
+  }
+};
 
 const Data = () => {
   return (
-    <div className="home__data">
-        <h1 className="home__title">William Bierhals</h1>
+    <motion.div className="home__data" initial="initial" animate='animate'>
+        <motion.h1 className="home__title" initial={{opacity: 0, scale: 0}} animate={{opacity: 1, scale: 1}} 
+        transition={{duration: 0.6, ease: easeing}}>William Bierhals</motion.h1>
         <h3 className="home__subtitle"> <Typewriter
             words={['Desenvolvedor Front-end', 'Desenvolvedor PHP', 'Quality Assurance']}
             loop={false}
@@ -14,9 +38,9 @@ const Data = () => {
             deleteSpeed={50}
             delaySpeed={1000}
           /></h3>
-        <p className="home__description">Crio aplicações webs interativas, responsivas e completas, incluindo back-end e testes.</p>
+        <motion.p className="home__description" variants={fadeInUp}>Crio aplicações webs interativas, responsivas e completas, incluindo back-end e testes.</motion.p>
 
-        <a href="#contact" className="button button--flex">
+        <motion.a href="#contact" className="button button--flex" initial={{opacity: 0, scale: 0}} animate={{opacity: 1, scale: 1}} transition={{duration: 0.8, ease: easeing}}>
             Diga Olá
             <svg
                   class="button__icon"
@@ -35,8 +59,8 @@ const Data = () => {
                     fill="var(--container-color)"
                   ></path>
             </svg>
-        </a>
-    </div>
+        </motion.a>
+    </motion.div>
   );
 }
 

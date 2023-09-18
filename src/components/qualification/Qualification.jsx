@@ -1,5 +1,25 @@
 import React, { useState } from 'react'
 import './qualification.css'
+import { motion } from "framer-motion"
+
+let easeing = [0.6, -0.5, 0.01, 0.99];
+
+const item = {
+  hidden:{opacity:0, y:-30},
+  show:{
+      opacity: 1,
+      y: 0,
+      transition:{duration: 0.8, ease: easeing}
+  }
+};
+
+const container = {
+  show:{
+      transition:{
+          staggerChildren: 0.2
+      }
+  }
+};
 
 const Qualification = () => {
 
@@ -10,12 +30,12 @@ const Qualification = () => {
     };
 
   return (
-    <section className="qualification section" id="portfolio">
-        <h2 className="section__title">Portfólio</h2>
-        <span className="section__subtitle">Um pouco sobre as minhas experiências</span>
+    <motion.section className="qualification section" id="portfolio" variants={container} initial='hidden' exit='exit' whileInView='show' viewport={{once: false}}>
+        <motion.h2 className="section__title" variants={item}>Portfólio</motion.h2>
+        <motion.span className="section__subtitle" variants={item}>Um pouco sobre as minhas experiências</motion.span>
         
         <div className="qualification__container container">
-            <div className="qualification__tabs">
+            <motion.div className="qualification__tabs" variants={item}>
                 <div className={
                     toggleState === 1 
                     ? "qualification__button qualification__active button--flex" 
@@ -32,9 +52,9 @@ const Qualification = () => {
                     >
                     <i className="uil uil-briefcase-alt qualification__icon"> Trabalho</i>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className="qualification__sections">
+            <motion.div className="qualification__sections" variants={item}>
                 <div className={
                     toggleState === 1 
                     ? "qualification__content qualification__content-active"
@@ -169,9 +189,9 @@ const Qualification = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
-    </section>
+    </motion.section>
   );
 }
 

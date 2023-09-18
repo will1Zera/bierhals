@@ -1,6 +1,26 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.css';
+import { motion } from "framer-motion"
+
+let easeing = [0.6, -0.5, 0.01, 0.99];
+
+const item = {
+  hidden:{opacity:0, y:-30},
+  show:{
+      opacity: 1,
+      y: 0,
+      transition:{duration: 0.8, ease: easeing}
+  }
+};
+
+const container = {
+  show:{
+      transition:{
+          staggerChildren: 0.2
+      }
+  }
+};
 
 const Contact = () => {
     const form = useRef();
@@ -12,11 +32,11 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <section className="contact section" id="contact">
-        <h2 className="section__title">Contato</h2>
-        <span className="section__subtitle">Entre em contato comigo</span>
+    <motion.section className="contact section" id="contact" variants={container} initial='hidden' exit='exit' whileInView='show' viewport={{once: false}}>
+        <motion.h2 className="section__title" variants={item}>Contato</motion.h2>
+        <motion.span className="section__subtitle" variants={item}>Entre em contato comigo</motion.span>
 
-        <div className="contact__container container grid">
+        <motion.div className="contact__container container grid" variants={item}>
             <div className="contact__content">
                 <h3 className="contact__title">Fale comigo</h3>
 
@@ -91,8 +111,8 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
-        </div>
-    </section>
+        </motion.div>
+    </motion.section>
   );
 }
 
