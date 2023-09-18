@@ -24,23 +24,13 @@ const Backend = () => {
           </div>
 
           <div className="skills__data">
-            <i class='bx bxl-mongodb'></i>
-
-            <div>
-              <h3 className="skills__name">MongoDB</h3>
-            </div>
-          </div>
-
-          <div className="skills__data">
             <i class='bx bx-check'></i>
 
             <div>
               <h3 className="skills__name">MySQL</h3>
             </div>
           </div>
-        </div>
 
-        <div className="skills__group">
           <div className="skills__data">
             <i class='bx bx-check'></i>
 
@@ -48,7 +38,9 @@ const Backend = () => {
               <h3 className="skills__name">Postman</h3>
             </div>
           </div>
+        </div>
 
+        <div className="skills__group">
           <div className="skills__data">
             <i class='bx bxl-java'></i>
 

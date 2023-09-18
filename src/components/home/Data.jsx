@@ -1,10 +1,19 @@
 import React from 'react'
+import { Typewriter } from 'react-simple-typewriter'
 
 const Data = () => {
   return (
     <div className="home__data">
         <h1 className="home__title">William Bierhals</h1>
-        <h3 className="home__subtitle">Desenvolvedor Front-End</h3>
+        <h3 className="home__subtitle"> <Typewriter
+            words={['Desenvolvedor Front-end', 'Desenvolvedor PHP', 'Quality Assurance']}
+            loop={false}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          /></h3>
         <p className="home__description">Crio aplicações webs interativas, responsivas e completas, incluindo back-end e testes.</p>
 
         <a href="#contact" className="button button--flex">

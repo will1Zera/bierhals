@@ -64,14 +64,6 @@ const Frontend = () => {
               <h3 className="skills__name">React</h3>
             </div>
           </div>
-
-          <div className="skills__data">
-            <i class='bx bx-check'></i>
-
-            <div>
-              <h3 className="skills__name">Jest</h3>
-            </div>
-          </div>
         </div>
       </div>
     </div>
