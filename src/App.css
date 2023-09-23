@@ -117,6 +117,17 @@ img{
   height: auto;
 }
 
+.cursor{
+  height: 40px;
+  width: 40px; 
+  border: 1px solid #000; 
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 /* ------ Classes css reutilizaveis ------ */
 
 .section{
@@ -161,6 +172,7 @@ img{
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  cursor: pointer;
 }
 
 .button:hover{

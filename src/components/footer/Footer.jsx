@@ -1,6 +1,7 @@
 import React from 'react'
 import './footer.css'
 import { motion } from "framer-motion"
+import { Link } from 'react-scroll';
 
 let easeing = [0.6, -0.5, 0.01, 0.99];
 
@@ -29,11 +30,11 @@ const Footer = () => {
 
             <ul className="footer__list">
                 <li>
-                    <a href="#about" className='footer__link'>Sobre</a>
+                    <Link to="about" spy={true} smooth={true} duration={500} className='footer__link'>Sobre</Link>
                 </li>
 
                 <li>
-                    <a href="#portfolio" className='footer__link'>Projetos</a>
+                    <Link to="services" spy={true} smooth={true} duration={500} className='footer__link'>Projetos</Link>
                 </li>
             </ul>
 
