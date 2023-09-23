@@ -23,7 +23,7 @@ const container = {
 
 const Qualification = () => {
 
-    const [toggleState, setToggleState] = useState(1);
+    const [toggleState, setToggleState] = useState(2);
 
     const toggleTab = (index) =>{
         setToggleState(index);
@@ -37,20 +37,20 @@ const Qualification = () => {
         <div className="qualification__container container">
             <motion.div className="qualification__tabs" variants={item}>
                 <div className={
-                    toggleState === 1 
-                    ? "qualification__button qualification__active button--flex" 
-                    : "qualification__button button--flex"}
-                    onClick={() => toggleTab(1)}
-                    >
-                    <i className="uil uil-graduation-cap qualification__icon"> Educação</i>
-                </div>
-                <div className={
                     toggleState === 2 
                     ? "qualification__button qualification__active button--flex" 
                     : "qualification__button button--flex"}
                     onClick={() => toggleTab(2)}
                     >
                     <i className="uil uil-briefcase-alt qualification__icon"> Trabalho</i>
+                </div>
+                <div className={
+                    toggleState === 1 
+                    ? "qualification__button qualification__active button--flex" 
+                    : "qualification__button button--flex"}
+                    onClick={() => toggleTab(1)}
+                    >
+                    <i className="uil uil-graduation-cap qualification__icon"> Educação</i>
                 </div>
             </motion.div>
 
@@ -62,7 +62,7 @@ const Qualification = () => {
                 }>
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">Anál. e Desenv. de Sistemas</h3>
+                            <h3 className="qualification__title">Análise e Desenvolvimento de Sistemas</h3>
                             <span className="qualification__subtitle">UCPel</span>
                             <div className="qualification__calender">
                                 <i className="uil uil-calendar-alt"> 2023 - Presente</i>
@@ -159,9 +159,27 @@ const Qualification = () => {
                     : "qualification__content"
                 }>
                     <div className="qualification__data">
+                        <div></div>
+
                         <div>
-                            <h3 className="qualification__title">Estágiario QA e Automação de Testes</h3>
-                            <span className="qualification__subtitle">CompassUOL</span>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                        <div>
+                            <h3 className="qualification__title">Desenvolvedor FullStack</h3>
+                            <span className="qualification__subtitle">Crio sistemas web para o Hospital Universitário São Francisco de Paula, utilizando PHP, MySQL e Javascript</span>
+                            <span className="qualification__subtitle">Extensionista - UCPel</span>
+                            <div className="qualification__calender">
+                                <i className="uil uil-calendar-alt"> 06/2023 - Presente</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="qualification__data">
+                        <div>
+                            <h3 className="qualification__title">QA e Automação de Testes</h3>
+                            <span className="qualification__subtitle">Realizei testes manuais e automatizados de APIs, utilizando Postman e RestAssured, entre outras ferramentas</span>
+                            <span className="qualification__subtitle">Estágiario - CompassUOL</span>
                             <div className="qualification__calender">
                                 <i className="uil uil-calendar-alt"> 05/2023 - 08/2023</i>
                             </div>
@@ -173,21 +191,6 @@ const Qualification = () => {
                         </div>
                     </div>
 
-                    <div className="qualification__data">
-                        <div></div>
-
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification__title">Extensionista Desenvolvedor Full Stack</h3>
-                            <span className="qualification__subtitle">UCPel</span>
-                            <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"> 06/2023 - Presente</i>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </motion.div>
         </div>
