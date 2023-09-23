@@ -1,12 +1,13 @@
 import React from 'react'
 import { motion } from "framer-motion"
+import { Link } from 'react-scroll'
 
 let easeing = [0.6, -0.5, 0.01, 0.99];
 
 const ScrollDown = () => {
     return (
         <motion.div className="home__scroll" initial={{opacity: 0, scale: 0}} animate={{opacity: 1, scale: 1}} transition={{duration: 1.2, ease: easeing}}>
-            <a href="#about" className="home__scroll-butoon button--flex">
+            <Link to="about" spy={true} smooth={true} duration={500} href="#about" className="home__scroll-butoon button--flex">
                 <svg
                         width="32px"
                         height="32px"
@@ -44,7 +45,7 @@ const ScrollDown = () => {
                 </svg>
                 <span className="home__scroll-name">Role para baixo</span>
                 <i class="uil uil-arrow-down home__scroll-arrow"></i>
-            </a>
+            </Link>
         </motion.div>
     );
 }

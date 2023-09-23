@@ -109,6 +109,10 @@
     color: var(--title-color);
 }
 
+.home__scroll-butoon{
+    cursor: pointer;
+}
+
 /* ------ Responsividades ------ */
 
 /* ------ Grande ------ */

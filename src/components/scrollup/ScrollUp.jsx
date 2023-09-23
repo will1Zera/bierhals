@@ -1,5 +1,6 @@
 import React from 'react'
 import './scrollup.css'
+import { Link } from 'react-scroll'
 
 const ScrollUp = () => {
     
@@ -10,9 +11,9 @@ const ScrollUp = () => {
     });
 
   return (
-    <a href="#home" className="scrollup">
+    <Link to="home" spy={true} smooth={true} duration={500} className="scrollup">
         <i className="uil uil-arrow-up scrollup__icon"></i>
-    </a>
+    </Link>
   );
 }
 

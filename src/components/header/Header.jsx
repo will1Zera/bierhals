@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./header.css";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { Link } from 'react-scroll';
 
 let easeing = [0.6, -0.5, 0.01, 0.99];
 
@@ -36,39 +37,39 @@ const Header = () => {
             <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                 <motion.ul className="nav__list grid" variants={header}>
                     <li className="nav__item">
-                        <a href="#home" onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? "nav__link active-link" : "nav__link"}>
+                        <Link to="home" spy={true} smooth={true} duration={500} onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? "nav__link active-link" : "nav__link"}>
                             <i className="uil uil-estate nav__icon"></i> Início
-                        </a>
+                        </Link>
                     </li>
 
                     <li className="nav__item">
-                        <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === "#about" ? "nav__link active-link" : "nav__link"}>
+                        <Link to="about" spy={true} smooth={true} duration={500} onClick={() => setActiveNav('#about')} className={activeNav === "#about" ? "nav__link active-link" : "nav__link"}>
                             <i className="uil uil-user nav__icon"></i> Sobre
-                        </a>
+                        </Link>
                     </li>
 
                     <li className="nav__item">
-                        <a href="#skills" onClick={() => setActiveNav('#skills')} className={activeNav === "#skills" ? "nav__link active-link" : "nav__link"}>
+                        <Link to="skills" spy={true} smooth={true} duration={500} onClick={() => setActiveNav('#skills')} className={activeNav === "#skills" ? "nav__link active-link" : "nav__link"}>
                             <i className="uil uil-file-alt nav__icon"></i> Habilidades
-                        </a>
+                        </Link>
                     </li>
 
                     <li className="nav__item">
-                        <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === "#services" ? "nav__link active-link" : "nav__link"}>
+                        <Link to="services" spy={true} smooth={true} duration={500} onClick={() => setActiveNav('#services')} className={activeNav === "#services" ? "nav__link active-link" : "nav__link"}>
                             <i className="uil uil-briefcase-alt nav__icon"></i> Projetos
-                        </a>
+                        </Link>
                     </li>
 
                     <li className="nav__item">
-                        <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === "#portfolio" ? "nav__link active-link" : "nav__link"}>
+                        <Link to="portfolio" spy={true} smooth={true} duration={500} onClick={() => setActiveNav('#portfolio')} className={activeNav === "#portfolio" ? "nav__link active-link" : "nav__link"}>
                             <i className="uil uil-scenery nav__icon"></i> Portfólio
-                        </a>
+                        </Link>
                     </li>
 
                     <li className="nav__item">
-                        <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"}>
+                        <Link to="contact" spy={true} smooth={true} duration={500} onClick={() => setActiveNav('#contact')} className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"}>
                             <i className="uil uil-message nav__icon"></i> Contato
-                        </a>
+                        </Link>
                     </li>
                 </motion.ul>
 
