@@ -35,6 +35,10 @@
     column-gap: 0.5rem;
 }
 
+.skills__data img{
+    width: 20px;
+}
+
 .skills .bx{
     font-size: 1.3rem;
     color: var(--title-color);
