@@ -1,5 +1,5 @@
 .services__container{
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(1, 992px);
     column-gap: 3rem;
     justify-content: center;
 }
@@ -7,8 +7,9 @@
 .services__content{
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 1.25rem;
+    display: flex;
 }
 
 .services__title{
@@ -31,9 +32,10 @@
 }
 
 .services__data{
+    margin: 1.5rem 0 0 1.2rem;
     display: flex;
-    column-gap: 0.5rem;
-    justify-content: center;
+    justify-content: center; 
+    column-gap: 0.5rem; 
 }
 
 .services .bx-badge-check{
@@ -46,6 +48,7 @@
     font-weight: var(--font-normal);
     line-height: 18px;
     text-align: center;
+    width: 325px;
 }
 
 .services__technologies{
@@ -63,15 +66,41 @@
     margin: 0 10px;
 }
 
-img{
+.services__content img{
     margin-bottom: .8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 600px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.services__content img:hover{
+    transform: scale(1.01);
+    filter: brightness(70%);
 }
 
 /* ------ Responsividades ------ */
 
 /* ------ Grande ------ */
 
+@media screen and (max-width: 1024px){
+    .services__container{
+        grid-template-columns: repeat(2, 350px);
+    }
 
+    .services__content{
+        padding: 2rem 2rem;
+        display: inline;
+    }
+
+    .services__data{
+        margin: 0;
+    }
+
+    .services__name{
+        width: auto;
+    }
+}
   
 /* ------ Média ------ */
   

@@ -1,15 +1,16 @@
 import React from 'react'
+import FlusheImage from '../../assets/flushe.png'
 
 const Flushe = () => {
   return (
     <div className="services__content">
-      <h3 className="services__title">FLUSHE</h3>
-      <img src="https://github.com/will1Zera/Flushe/raw/master/assets/animation.gif" alt="Gif do flushe" />
+      <img src={FlusheImage} alt="Imagem do flushe" onClick={() => { window.open('https://flushee.web.app/', '_blank'); }}/>
 
       <div className="services__box">
         <div className="services__group">
           <div className="services__data">
             <div>
+              <h3 className="services__title">FLUSHE 💎</h3>
               <p className="services__name">Flushe é uma plataforma que permite o usuário se cadastrar e logar com seu email e senha. Com ele, também é possível o usuário efetuar o login com a sua conta do google ou facebook.</p>
             </div>
           </div>

@@ -1,16 +1,17 @@
 import React from 'react'
+import MoviestarImage from '../../assets/moviestar.png'
 
 const MovieStar = () => {
   return (
     <div className="services__content">
-      <h3 className="services__title">MOVIESTAR</h3>
-      <img src="https://github.com/will1Zera/moviestar/raw/main/img/moviestar.gif?raw=true" alt="Gif do moviestar" />
+      <img src={MoviestarImage} alt="Imagem do moviestar" onClick={() => { window.open('https://github.com/will1Zera/moviestar', '_blank'); }}/>
 
       <div className="services__box">
         <div className="services__group">
           <div className="services__data">
             <div>
-              <p className="services__name">Sistema de avaliações de filmes, com a possibilidade de criar sua conta, adicionar seus filmes e avaliar os filmes dos outros usuários.</p>
+              <h3 className="services__title">MOVIESTAR ⭐</h3>
+              <p className="services__name">MovieStar é um sistema de avaliações de filmes, com a possibilidade de criar sua conta, editar seu perfil, adicionar seus filmes e avaliar os filmes dos outros usuários.</p>
             </div>
           </div>
 

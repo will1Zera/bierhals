@@ -4,8 +4,6 @@ import Employ from './Employ';
 import Flushe from './Flushe';
 import Fotox from './Fotox';
 import MovieStar from './MovieStar';
-import StudentCRUD from './StudentCRUD';
-import TestesAPI from './TestesAPI';
 import { motion } from "framer-motion"
 
 let easeing = [0.6, -0.5, 0.01, 0.99];
@@ -37,8 +35,6 @@ const Services = () => {
             <Flushe />
             <Fotox />
             <MovieStar />
-            <StudentCRUD />
-            <TestesAPI />
         </motion.div>
     </motion.section>
   );

@@ -1,16 +1,17 @@
 import React from 'react'
+import FotoxImage from '../../assets/fotox.png'
 
 const Fotox = () => {
   return (
     <div className="services__content">
-      <h3 className="services__title">FOTOX</h3>
-      <img src="https://github.com/will1Zera/Fotox/raw/main/images/fotox.gif" alt="Gif do fotox" />
+      <img src={FotoxImage} alt="Imagem do fotox" onClick={() => { window.open('https://fotoxx.web.app/', '_blank'); }}/>
 
       <div className="services__box">
         <div className="services__group">
           <div className="services__data">
             <div>
-              <p className="services__name">Fotox disponibiliza uma variedade de imagens gratuitas, com a possibilidade de fazer sua pesquisa utilizando o reconhecimento de voz. Foi consumido duas APIs.</p>
+              <h3 className="services__title">FOTOX 📷</h3>
+              <p className="services__name">Fotox disponibiliza uma variedade de imagens gratuitas através de uma api, com a possibilidade de fazer sua pesquisa utilizando o reconhecimento de voz de outra api. Possui um menu de navegação por sessões.</p>
             </div>
           </div>
 
