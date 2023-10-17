@@ -4,8 +4,6 @@ import EmployImage from '../../assets/employ.png'
 const Employ = () => {
   return (
     <div className="services__content">
-      <img src={EmployImage} alt="Imagem do employ" onClick={() => { window.open('https://employy.netlify.app/', '_blank'); }}/>
-
       <div className="services__box">
         <div className="services__group">
           <div className="services__data">
@@ -29,6 +27,8 @@ const Employ = () => {
           </div>
         </div>
       </div>
+
+      <img className="services__image" src={EmployImage} alt="Imagem do employ" onClick={() => { window.open('https://employy.netlify.app/', '_blank'); }}/>
     </div>
   );
 }

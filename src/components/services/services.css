@@ -32,7 +32,7 @@
 }
 
 .services__data{
-    margin: 1.5rem 0 0 1.2rem;
+    margin: 1.5rem;
     display: flex;
     justify-content: center; 
     column-gap: 0.5rem; 
@@ -70,7 +70,7 @@
     margin-bottom: .8rem;
     border-radius: 20px;
     cursor: pointer;
-    width: 600px;
+    width: 580px;
     transition: transform 0.3s, filter 0.3s;
 }
 

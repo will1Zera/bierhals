@@ -4,8 +4,6 @@ import FotoxImage from '../../assets/fotox.png'
 const Fotox = () => {
   return (
     <div className="services__content">
-      <img src={FotoxImage} alt="Imagem do fotox" onClick={() => { window.open('https://fotoxx.web.app/', '_blank'); }}/>
-
       <div className="services__box">
         <div className="services__group">
           <div className="services__data">
@@ -29,6 +27,8 @@ const Fotox = () => {
           </div>
         </div>
       </div>
+
+      <img className="services__image" src={FotoxImage} alt="Imagem do fotox" onClick={() => { window.open('https://fotoxx.web.app/', '_blank'); }}/>
     </div>
   );
 }

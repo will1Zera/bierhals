@@ -4,7 +4,7 @@ import FlusheImage from '../../assets/flushe.png'
 const Flushe = () => {
   return (
     <div className="services__content">
-      <img src={FlusheImage} alt="Imagem do flushe" onClick={() => { window.open('https://flushee.web.app/', '_blank'); }}/>
+      <img className="services__image" src={FlusheImage} alt="Imagem do flushe" onClick={() => { window.open('https://flushee.web.app/', '_blank'); }}/>
 
       <div className="services__box">
         <div className="services__group">

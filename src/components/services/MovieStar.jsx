@@ -4,7 +4,7 @@ import MoviestarImage from '../../assets/moviestar.png'
 const MovieStar = () => {
   return (
     <div className="services__content">
-      <img src={MoviestarImage} alt="Imagem do moviestar" onClick={() => { window.open('https://github.com/will1Zera/moviestar', '_blank'); }}/>
+      <img className="services__image" src={MoviestarImage} alt="Imagem do moviestar" onClick={() => { window.open('https://github.com/will1Zera/moviestar', '_blank'); }}/>
 
       <div className="services__box">
         <div className="services__group">
@@ -24,6 +24,7 @@ const MovieStar = () => {
           <div className="services__data">
             <div>
               <a href="https://github.com/will1Zera/moviestar" target="_blank" rel="noreferrer"><i class='bx bxl-github'></i></a>
+              <a href="https://github.com/will1Zera/moviestar" target="_blank" rel="noreferrer"><i class='bx bx-link-external'></i></a>
             </div>
           </div>
         </div>

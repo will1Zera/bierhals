@@ -5,6 +5,7 @@ import Flushe from './Flushe';
 import Fotox from './Fotox';
 import MovieStar from './MovieStar';
 import { motion } from "framer-motion"
+import Petix from './Petix';
 
 let easeing = [0.6, -0.5, 0.01, 0.99];
 
@@ -31,6 +32,7 @@ const Services = () => {
         <motion.h2 className="section__title" variants={item}>Projetos</motion.h2>
         <motion.span className="section__subtitle" variants={item}>Alguns dos meus projetos</motion.span>
         <motion.div className="services__container container grid" variants={item}>
+            <Petix />
             <Employ />
             <Flushe />
             <Fotox />

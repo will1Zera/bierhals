@@ -61,11 +61,27 @@ const Qualification = () => {
                     : "qualification__content"
                 }>
                     <div className="qualification__data">
+                        <div></div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
                         <div>
                             <h3 className="qualification__title">Análise e Desenvolvimento de Sistemas</h3>
                             <span className="qualification__subtitle">UCPel</span>
                             <div className="qualification__calender">
                                 <i className="uil uil-calendar-alt"> 2023 - Presente</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="qualification__data">
+                        <div>
+                            <h3 className="qualification__title">Typescript do básico ao avançado</h3>
+                            <span className="qualification__subtitle">Udemy</span>
+                            <div className="qualification__calender">
+                                <i className="uil uil-calendar-alt"> 10/2023</i>
                             </div>
                         </div>
 
@@ -167,8 +183,8 @@ const Qualification = () => {
                         </div>
                         <div>
                             <h3 className="qualification__title">Desenvolvedor FullStack</h3>
-                            <span className="qualification__subtitle">Crio sistemas web para o Hospital Universitário São Francisco de Paula, utilizando PHP, MySQL e Javascript</span>
-                            <span className="qualification__subtitle">Extensionista - UCPel</span>
+                            <span className="qualification__subtitle">Sou responsável por desenvolver sistemas web para o Hospital Universitário São Francisco de Paula de Pelotas utilizando Trello, Github, PHP, MySQL, Bootstrap e Javascript</span>
+                            <span className="qualification__subtitle">Bolsista - UCPel</span>
                             <div className="qualification__calender">
                                 <i className="uil uil-calendar-alt"> 06/2023 - Presente</i>
                             </div>
@@ -178,8 +194,8 @@ const Qualification = () => {
                     <div className="qualification__data">
                         <div>
                             <h3 className="qualification__title">QA e Automação de Testes</h3>
-                            <span className="qualification__subtitle">Realizei testes manuais e automatizados de APIs, utilizando Postman e RestAssured, entre outras ferramentas</span>
-                            <span className="qualification__subtitle">Estágiario - CompassUOL</span>
+                            <span className="qualification__subtitle">Era responsável por realizar testes manuais e automatizados de APIs, utilizando Gitlab, Jira, Postman, RestAssured com TestNG e Pipelines.</span>
+                            <span className="qualification__subtitle">Estágiario - Compass UOL</span>
                             <div className="qualification__calender">
                                 <i className="uil uil-calendar-alt"> 05/2023 - 08/2023</i>
                             </div>
