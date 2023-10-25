@@ -195,7 +195,7 @@ const Qualification = () => {
                         <div>
                             <h3 className="qualification__title">Quality Assurance</h3>
                             <span className="qualification__subtitle">Era responsável por realizar testes manuais e automatizados de APIs, utilizando Gitlab, Jira, Postman, RestAssured com TestNG e Pipelines.</span>
-                            <span className="qualification__subtitle">Estágiario - Compass UOL</span>
+                            <span className="qualification__subtitle">Estagiário - Compass UOL</span>
                             <div className="qualification__calender">
                                 <i className="uil uil-calendar-alt"> 05/2023 - 08/2023</i>
                             </div>
