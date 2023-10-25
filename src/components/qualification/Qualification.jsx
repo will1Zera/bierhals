@@ -71,7 +71,7 @@ const Qualification = () => {
                             <h3 className="qualification__title">Análise e Desenvolvimento de Sistemas</h3>
                             <span className="qualification__subtitle">UCPel</span>
                             <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"> 2023 - Presente</i>
+                                <i className="uil uil-calendar-alt"> 02/2023 - Presente</i>
                             </div>
                         </div>
                     </div>
@@ -182,7 +182,7 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                         <div>
-                            <h3 className="qualification__title">Desenvolvedor FullStack</h3>
+                            <h3 className="qualification__title">Desenvolvedor Full Stack</h3>
                             <span className="qualification__subtitle">Sou responsável por desenvolver sistemas web para o Hospital Universitário São Francisco de Paula de Pelotas utilizando Trello, Github, PHP, MySQL, Bootstrap e Javascript</span>
                             <span className="qualification__subtitle">Bolsista - UCPel</span>
                             <div className="qualification__calender">
@@ -193,7 +193,7 @@ const Qualification = () => {
 
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">QA e Automação de Testes</h3>
+                            <h3 className="qualification__title">Quality Assurance</h3>
                             <span className="qualification__subtitle">Era responsável por realizar testes manuais e automatizados de APIs, utilizando Gitlab, Jira, Postman, RestAssured com TestNG e Pipelines.</span>
                             <span className="qualification__subtitle">Estágiario - Compass UOL</span>
                             <div className="qualification__calender">

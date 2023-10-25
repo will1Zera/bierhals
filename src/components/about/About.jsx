@@ -37,7 +37,7 @@ const About = () => {
                 <Info />
 
                 <p className="about__description">
-                    Crio interfaces web responsivas e elegantes. Minha paixão por tecnologia me levou a mergulhar em React e Typescript. Além disso, minha curiosidade me levou a conhecer back-end e testes, garantindo que meus projetos sejam entregues com excelência.
+                    Crio interfaces web responsivas e elegantes. Minha paixão por tecnologia me levou a mergulhar em React e Typescript. Além disso, minha curiosidade me levou a conhecer o mundo do Laravel e do Cypress, garantindo que meus projetos sejam entregues com excelência e qualidade.
                 </p>
 
                 <a download="" href={CV} className="button button--flex">

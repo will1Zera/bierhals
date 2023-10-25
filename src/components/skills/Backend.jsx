@@ -16,10 +16,26 @@ const Backend = () => {
           </div>
 
           <div className="skills__data">
+            <img src="https://skillicons.dev/icons?i=laravel" alt="skill-icon" />
+
+            <div>
+              <h3 className="skills__name">Laravel</h3>
+            </div>
+          </div>
+
+          <div className="skills__data">
             <img src="https://skillicons.dev/icons?i=mysql" alt="skill-icon" />
 
             <div>
               <h3 className="skills__name">MySQL</h3>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <img src="https://skillicons.dev/icons?i=express" alt="skill-icon" />
+
+            <div>
+              <h3 className="skills__name">Express</h3>
             </div>
           </div>
 
@@ -30,7 +46,9 @@ const Backend = () => {
               <h3 className="skills__name">Firebase</h3>
             </div>
           </div>
+        </div>
 
+        <div className="skills__group">
           <div className="skills__data">
             <img src="https://skillicons.dev/icons?i=postman" alt="skill-icon" />
 
@@ -38,9 +56,7 @@ const Backend = () => {
               <h3 className="skills__name">Postman</h3>
             </div>
           </div>
-        </div>
 
-        <div className="skills__group">
           <div className="skills__data">
             <img src="https://skillicons.dev/icons?i=java" alt="skill-icon" />
 

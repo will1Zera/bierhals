@@ -31,7 +31,7 @@ const Data = () => {
         <motion.h1 className="home__title" initial={{opacity: 0, scale: 0}} animate={{opacity: 1, scale: 1}} 
         transition={{duration: 0.6, ease: easeing}}>William Bierhals</motion.h1>
         <h3 className="home__subtitle"> <Typewriter
-            words={['Desenvolvedor Front-end', 'Desenvolvedor PHP', 'Quality Assurance']}
+            words={['Desenvolvedor Full Stack', 'Quality Assurance']}
             loop={false}
             cursor
             cursorStyle='_'
@@ -39,7 +39,7 @@ const Data = () => {
             deleteSpeed={50}
             delaySpeed={1000}
           /></h3>
-        <motion.p className="home__description" variants={fadeInUp}>Crio aplicações webs interativas, responsivas e completas, incluindo back-end e testes.</motion.p>
+        <motion.p className="home__description" variants={fadeInUp}>Crio aplicações web interativas, responsivas e completas, incluindo design, front-end, back-end e testes.</motion.p>
         <motion.span initial={{opacity: 0, scale: 0}} animate={{opacity: 1, scale: 1}} transition={{duration: 0.8, ease: easeing}}>
           <Link to="contact" spy={true} smooth={true} duration={500} className="button button--flex">
               Diga Olá
