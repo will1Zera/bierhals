@@ -2,7 +2,6 @@ import React from 'react'
 import "./services.css";
 import Employ from './Employ';
 import Flushe from './Flushe';
-import Fotox from './Fotox';
 import MovieStar from './MovieStar';
 import { motion } from "framer-motion"
 import Petix from './Petix';
@@ -35,7 +34,6 @@ const Services = () => {
             <Petix />
             <Employ />
             <Flushe />
-            <Fotox />
             <MovieStar />
         </motion.div>
     </motion.section>

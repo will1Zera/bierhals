@@ -3,7 +3,7 @@ import React from 'react'
 const Backend = () => {
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Back-End | QA</h3>
+      <h3 className="skills__title">Back-End</h3>
 
       <div className="skills__box">
         <div className="skills__group">
@@ -32,14 +32,6 @@ const Backend = () => {
           </div>
 
           <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=express" alt="skill-icon" />
-
-            <div>
-              <h3 className="skills__name">Express</h3>
-            </div>
-          </div>
-
-          <div className="skills__data">
             <img src="https://skillicons.dev/icons?i=firebase" alt="skill-icon" />
 
             <div>
@@ -54,14 +46,6 @@ const Backend = () => {
 
             <div>
               <h3 className="skills__name">Postman</h3>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=java" alt="skill-icon" />
-
-            <div>
-              <h3 className="skills__name">RestAssured</h3>
             </div>
           </div>
 

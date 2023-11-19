@@ -183,10 +183,10 @@ const Qualification = () => {
                         </div>
                         <div>
                             <h3 className="qualification__title">Desenvolvedor Full Stack</h3>
-                            <span className="qualification__subtitle">Sou responsável por desenvolver sistemas web para o Hospital Universitário São Francisco de Paula de Pelotas utilizando Trello, Github, PHP, MySQL, Bootstrap e Javascript</span>
-                            <span className="qualification__subtitle">Bolsista - UCPel</span>
+                            <span className="qualification__subtitle">Sou responsável por desenvolver e dar manutenção nos sistemas web da YellowGo para a Osirnet utilizando HTML, CSS, Javascript, Laravel e MySQL</span>
+                            <span className="qualification__subtitle">Júnior - YellowGo</span>
                             <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"> 06/2023 - Presente</i>
+                                <i className="uil uil-calendar-alt"> 11/2023 - Presente</i>
                             </div>
                         </div>
                     </div>
@@ -195,7 +195,7 @@ const Qualification = () => {
                         <div>
                             <h3 className="qualification__title">Quality Assurance</h3>
                             <span className="qualification__subtitle">Era responsável por realizar testes manuais e automatizados de APIs, utilizando Gitlab, Jira, Postman, RestAssured com TestNG e Pipelines.</span>
-                            <span className="qualification__subtitle">Estagiário - Compass UOL</span>
+                            <span className="qualification__subtitle">Estágio - Compass UOL</span>
                             <div className="qualification__calender">
                                 <i className="uil uil-calendar-alt"> 05/2023 - 08/2023</i>
                             </div>

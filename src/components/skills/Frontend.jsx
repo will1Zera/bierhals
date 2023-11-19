@@ -16,14 +16,6 @@ const Frontend = () => {
           </div>
 
           <div className="skills__data">
-            <img src="https://cdn.iconscout.com/icon/free/png-256/free-jira-3521518-2945021.png" alt="skill-icon" />
-
-            <div>
-              <h3 className="skills__name">Jira</h3>
-            </div>
-          </div>
-
-          <div className="skills__data">
             <img src="https://skillicons.dev/icons?i=bootstrap" alt="skill-icon" />
 
             <div>
@@ -38,17 +30,7 @@ const Frontend = () => {
               <h3 className="skills__name">Tailwind</h3>
             </div>
           </div>
-
-          <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=styledcomponents" alt="skill-icon" />
-
-            <div>
-              <h3 className="skills__name">S.Comp.</h3>
-            </div>
-          </div>
-        </div>
-
-        <div className="skills__group">
+          
           <div className="skills__data">
             <img src="https://skillicons.dev/icons?i=jquery" alt="skill-icon" />
 
@@ -56,7 +38,9 @@ const Frontend = () => {
               <h3 className="skills__name">JQuery</h3>
             </div>
           </div>
+        </div>
 
+        <div className="skills__group">
           <div className="skills__data">
             <img src="https://skillicons.dev/icons?i=javascript" alt="skill-icon" />
 

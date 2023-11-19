@@ -4,7 +4,6 @@ import MoviestarImage from '../../assets/moviestar.png'
 const MovieStar = () => {
   return (
     <div className="services__content">
-      <img className="services__image" src={MoviestarImage} alt="Imagem do moviestar" onClick={() => { window.open('https://github.com/will1Zera/moviestar', '_blank'); }}/>
 
       <div className="services__box">
         <div className="services__group">
@@ -29,6 +28,8 @@ const MovieStar = () => {
           </div>
         </div>
       </div>
+      
+      <img className="services__image" src={MoviestarImage} alt="Imagem do moviestar" onClick={() => { window.open('https://github.com/will1Zera/moviestar', '_blank'); }}/>
     </div>
   );
 }

@@ -12,13 +12,13 @@ const Info = () => {
         <div className="about__box">
             <i class='bx bx-trending-up about__icon'></i>
             <h3 className="about__title">Completos</h3>
-            <span className="about__subtitle">+25 projetos</span>
+            <span className="about__subtitle">+30 projetos</span>
         </div>
 
         <div className="about__box">
             <i class='bx bx-user about__icon'></i>
             <h3 className="about__title">Habilidades</h3>
-            <span className="about__subtitle">Full Stack | QA</span>
+            <span className="about__subtitle">Full Stack</span>
         </div>
     </div>
   );
