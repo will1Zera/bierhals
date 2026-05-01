@@ -37,7 +37,7 @@ const About = () => {
                 <Info />
 
                 <p className="about__description">
-                    Desenvolvo interfaces web responsivas e elegantes. Minha paixão por tecnologia me levou a mergulhar em Laravel e Vue. Além disso, minha curiosidade me levou a conhecer o mundo do Docker, garantindo que meus projetos sejam entregues com excelência.
+                    Atuo como desenvolvedor full stack, com foco em backend utilizando PHP e Laravel na construção de APIs REST e GraphQL. Tenho experiência com boas práticas de desenvolvimento, testes e estruturação de aplicações. Também utilizo Docker para otimizar ambientes e processos de deploy. Busco constantemente evoluir minhas habilidades e desenvolver soluções eficientes e escaláveis.
                 </p>
 
                 <a download="" href={CV} className="button button--flex">

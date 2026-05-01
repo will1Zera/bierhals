@@ -39,7 +39,7 @@ const Data = () => {
             deleteSpeed={50}
             delaySpeed={1000}
           /></h3>
-        <motion.p className="home__description" variants={fadeInUp}>Desenvolvo aplicações web interativas, responsivas e completas, incluindo design, front-end e back-end.</motion.p>
+        <motion.p className="home__description" variants={fadeInUp}>Crio aplicações web completas, do backend ao frontend, com foco em performance, organização e boas práticas utilizando Laravel e Vue.</motion.p>
         <motion.span initial={{opacity: 0, scale: 0}} animate={{opacity: 1, scale: 1}} transition={{duration: 0.8, ease: easeing}}>
           <Link to="contact" spy={true} smooth={true} duration={500} className="button button--flex">
               Diga Olá
