@@ -8,13 +8,31 @@ const Frontend = () => {
       <div className="skills__box">
         <div className="skills__group">
           <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=git" alt="skill-icon" />
+            <img src="https://skillicons.dev/icons?i=html" alt="skill-icon" />
 
             <div>
-              <h3 className="skills__name">Git</h3>
+              <h3 className="skills__name">HTML</h3>
             </div>
           </div>
 
+          <div className="skills__data">
+            <img src="https://skillicons.dev/icons?i=css" alt="skill-icon" />
+
+            <div>
+              <h3 className="skills__name">CSS</h3>
+            </div>
+          </div>
+          
+          <div className="skills__data">
+            <img src="https://skillicons.dev/icons?i=javascript" alt="skill-icon" />
+
+            <div>
+              <h3 className="skills__name">Javascript</h3>
+            </div>
+          </div>
+        </div>
+
+        <div className="skills__group">
           <div className="skills__data">
             <img src="https://skillicons.dev/icons?i=bootstrap" alt="skill-icon" />
 
@@ -24,36 +42,10 @@ const Frontend = () => {
           </div>
 
           <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=tailwind" alt="skill-icon" />
+            <img src="https://skillicons.dev/icons?i=vue" alt="skill-icon" />
 
             <div>
-              <h3 className="skills__name">Tailwind</h3>
-            </div>
-          </div>
-          
-          <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=jquery" alt="skill-icon" />
-
-            <div>
-              <h3 className="skills__name">JQuery</h3>
-            </div>
-          </div>
-        </div>
-
-        <div className="skills__group">
-          <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=javascript" alt="skill-icon" />
-
-            <div>
-              <h3 className="skills__name">Javascript</h3>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=typescript" alt="skill-icon" />
-
-            <div>
-              <h3 className="skills__name">Typescript</h3>
+              <h3 className="skills__name">Vue</h3>
             </div>
           </div>
 
@@ -62,14 +54,6 @@ const Frontend = () => {
 
             <div>
               <h3 className="skills__name">React</h3>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=vue" alt="skill-icon" />
-
-            <div>
-              <h3 className="skills__name">Vue</h3>
             </div>
           </div>
         </div>

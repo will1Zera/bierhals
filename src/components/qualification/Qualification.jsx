@@ -175,6 +175,22 @@ const Qualification = () => {
                     : "qualification__content"
                 }>
                     <div className="qualification__data">
+                        <div>
+                            <h3 className="qualification__title">Desenvolvedor Full Stack Júnior II</h3>
+                            <span className="qualification__subtitle">Atuo como principal responsável pelo desenvolvimento de um CRM, um dos principais produtos da empresa, com foco na centralização, automação e escalabilidade dos processos de vendas, utilizando Laravel e MySQL, integrando o sistema a diversos ERPs, agendas e APIs, permitindo o controle do funil de vendas, desde a captação até a conversão dos leads.</span>
+                            <span className="qualification__subtitle">Júnior II - hLiberty</span>
+                            <div className="qualification__calender">
+                                <i className="uil uil-calendar-alt">01/2025 - o momento</i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div className="qualification__data">
                         <div></div>
 
                         <div>
@@ -182,11 +198,11 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                         <div>
-                            <h3 className="qualification__title">Desenvolvedor Full Stack</h3>
-                            <span className="qualification__subtitle">Sou responsável por desenvolver e dar manutenção nos sistemas web da YellowGo para a Osirnet utilizando HTML, CSS, Javascript, Laravel e MySQL</span>
-                            <span className="qualification__subtitle">Júnior - YellowGo</span>
+                            <h3 className="qualification__title">Desenvolvedor Full Stack Júnior I</h3>
+                            <span className="qualification__subtitle">Atuei na melhoria e desenvolvimento de vários módulos do sistema interno em Laravel. Colaborei com o desenvolvimento e melhoria de APIs Laravel.</span>
+                            <span className="qualification__subtitle">Júnior I - hLiberty</span>
                             <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"> 11/2023 - Presente</i>
+                                <i className="uil uil-calendar-alt"> 11/2023 - 12/2024</i>
                             </div>
                         </div>
                     </div>

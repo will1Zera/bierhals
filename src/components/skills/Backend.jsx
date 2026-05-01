@@ -30,46 +30,30 @@ const Backend = () => {
               <h3 className="skills__name">MySQL</h3>
             </div>
           </div>
-
-          <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=firebase" alt="skill-icon" />
-
-            <div>
-              <h3 className="skills__name">Firebase</h3>
-            </div>
-          </div>
         </div>
 
         <div className="skills__group">
-          <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=postman" alt="skill-icon" />
-
-            <div>
-              <h3 className="skills__name">Postman</h3>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=javascript" alt="skill-icon" />
-
-            <div>
-              <h3 className="skills__name">Cypress</h3>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <img src="https://skillicons.dev/icons?i=gitlab" alt="skill-icon" />
-
-            <div>
-              <h3 className="skills__name">Pipeline</h3>
-            </div>
-          </div>
-
           <div className="skills__data">
             <img src="https://skillicons.dev/icons?i=docker" alt="skill-icon" />
 
             <div>
               <h3 className="skills__name">Docker</h3>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <img src="https://skillicons.dev/icons?i=java" alt="skill-icon" />
+
+            <div>
+              <h3 className="skills__name">Java</h3>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <img src="https://skillicons.dev/icons?i=python" alt="skill-icon" />
+
+            <div>
+              <h3 className="skills__name">Python</h3>
             </div>
           </div>
         </div>

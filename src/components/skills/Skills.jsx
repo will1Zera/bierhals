@@ -30,8 +30,8 @@ const Skills = () => {
         <motion.span className="section__subtitle" variants={item}>Minhas habilidades técnicas</motion.span>
 
         <motion.div className="skills__container container grid" variants={item}>
-            <Frontend />
             <Backend />
+            <Frontend />
         </motion.div>
     </motion.section>
   );
